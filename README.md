@@ -30,20 +30,29 @@ Today I will cover the componets used to match Hex values. This particular regex
 ## Regex Components
 
 ### Anchors
-
+``/^``#?([a-f0-9]{6}|[a-f0-9]{3})``$/``
+First componet to breakdown is Anchors. Anchors are used at the beggining and end of any expression or string.  /^ $/
 ### Quantifiers
+/^#`?`([a-f0-9]`{6}`|[a-f0-9]`{3}`)$/
+Next quantifiers. They are used to annouce the amount of characters expected. Quantifiers let us know how many instances are expected for a match to be found.
 
 ### OR Operator
+/^#?([a-f0-9]{6}`|`[a-f0-9]{3})$/
+The "or" operator within a regular expression is defined using the `|` element . The operater lets us know that it can be either `[a-f0-9]{6}` or 3 characters `[a-f0-9]{3}`.
 
 ### Character Classes
+/^#?(`[a-f0-9]`{6}|`[a-f0-9]`{3})$/
+Now for charater class we can expect it to tell us waht type of characters to expect. They are confined  within `[]`
 
 ### Flags
 
 ### Grouping and Capturing
 
 ### Bracket Expressions
+/^#?`([a-f0-9]{6}|[a-f0-9]{3})`$/
 
 ### Greedy and Lazy Match
+/^#`?`([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ### Boundaries
 
@@ -52,5 +61,5 @@ Today I will cover the componets used to match Hex values. This particular regex
 ### Look-ahead and Look-behind
 
 ## Author
-
+Richard Cardoza     
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
